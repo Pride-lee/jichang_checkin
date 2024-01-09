@@ -32,7 +32,7 @@ try:
     content = result['msg']
     # 进行推送
     if SCKEY != '':
-        push_url = 'https://sctapi.ftqq.com/{}.send?title=机场签到成功&desp={}'.format(SCKEY, content)
+        push_url = 'https://sctapi.ftqq.com/{}.send?title=content&desp={}'.format(SCKEY, content)
         requests.post(url=push_url)
         print('推送成功')
 except:
